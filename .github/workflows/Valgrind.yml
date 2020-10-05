@@ -2,9 +2,9 @@ name: Valgrind
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -13,11 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: apt install dependency
       run: |
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
-    - name: make test
-      run: |
-        make test -C Mini_Project
-        valgrind ./Mini_projcet/build/all.out
+    - name: valgrindcheck  
+      run: chmod a+x all.out
+    - name: valgrindcheck1  
+      run: valgrind ./all.out
