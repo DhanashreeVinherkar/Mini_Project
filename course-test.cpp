@@ -1,5 +1,6 @@
 #include"course.h"
 #include"educourse.h"
+#include "simple.h"
 #include<gtest/gtest.h>
 namespace {
 class CourseTest : public ::testing::Test {

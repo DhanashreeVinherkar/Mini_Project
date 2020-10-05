@@ -11,5 +11,9 @@ educourse.o : educourse.cpp educourse.h course.h
 	g++ $< -c    
 course.o : course.cpp course.h
 	g++ $< -c
+createlib:
+	ar crv libsimple.a course.o coursedb.o educourse.o
+createStaticExe:
+	gcc -o staticExe course-test.cpp coursedb-test.cpp -lsimple -L.
 clean:
 	rm -rf *.o *.out
