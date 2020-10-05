@@ -1,7 +1,6 @@
 #include "course.h"
 #include "educourse.h"
 #include "coursedb.h"
-#include "simple.h"
 #include <gtest/gtest.h>
 namespace {
 class EduCourseDbTest : public ::testing::Test {
