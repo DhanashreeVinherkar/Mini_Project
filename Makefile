@@ -8,7 +8,9 @@ course-test.o: course-test.cpp course.h educourse.h
 coursedb.o : coursedb.cpp coursedb.h educourse.h course.h
 	g++ $< -c
 educourse.o : educourse.cpp educourse.h course.h
-	g++ $< -c    
+	g++ $< -c
+course.o : course.cpp course.h
+	g++ $< -c
 createlib:
 	ar crv libsimple.a course.o coursedb.o educourse.o
 createStaticExe:
