@@ -1,6 +1,6 @@
 #include"educourse.h"
 #include<iostream>
-
+using namespace std;
 
 EduCourse::EduCourse():
     m_courseId{""}, m_subject{""}, m_numberLectures{0}, m_price{0} {}
@@ -23,9 +23,9 @@ double EduCourse::computeDuration() {
     }
     return result;
 }
-string EduCourse::getCourseId() {
+/*string EduCourse::getCourseId() {
     return m_courseId;
-}
+}*/
 string EduCourse::getSubject() {
     return m_subject;
 }
