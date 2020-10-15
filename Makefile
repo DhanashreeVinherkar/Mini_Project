@@ -1,4 +1,4 @@
-all: all.out 
+
 all.out : course.o educourse.o coursedb.o course-test.o coursedb-test.o
 	g++ $^ -o $@ -lgtest -lgtest_main -lpthread
 coursedb-test.o: coursedb-test.cpp course.h educourse.h coursedb.h
