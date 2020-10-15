@@ -17,5 +17,7 @@ jobs:
       run: sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: Install Gtest
       run: sudo apt-get install libgtest-dev
+    - name: Change Directory
+      run: cd /usr/src/gtest
     - name: make test
       run:  make
