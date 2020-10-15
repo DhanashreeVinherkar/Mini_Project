@@ -23,9 +23,9 @@ double EduCourse::computeDuration() {
     }
     return result;
 }
-/*string EduCourse::getCourseId() {
+string EduCourse::getCourseId() {
     return m_courseId;
-}*/
+}
 string EduCourse::getSubject() {
     return m_subject;
 }
