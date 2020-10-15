@@ -1,6 +1,6 @@
 #include"educourse.h"
 #include<iostream>
-using namespace std;
+
 
 EduCourse::EduCourse():
     m_courseId{""}, m_subject{""}, m_numberLectures{0}, m_price{0} {}
